@@ -1,4 +1,14 @@
+/* global variables */
+
+/* global variables */
+
+/* global rules */
 * {
   box-sizing: border-box;
-  margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+/* end global rules */
