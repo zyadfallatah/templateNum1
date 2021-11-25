@@ -12,6 +12,10 @@
 /* global variables */
 
 /* global rules */
+
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -19,6 +23,40 @@
 }
 body {
   font-family: 'Work Sans', sans-serif;
+}
+
+.title {
+  width: 100%;
+  position: relative;
+  top: 5%;
+  font-size: 100px;
+  letter-spacing: -4px;
+  font-weight: 800;
+  color: #ebeced;
+  margin: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+/* media for mobile */
+@media (max-width: 767px) {
+  .title {
+    font-size: 60px
+  }
+}
+/* end media for mobile */
+
+  .title-descripe {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    top: -7%;
+    font-weight: 400;
+    color: var(--text-color);
+}
+@media (min-width: 1200px) {
+  .title-descripe {
+    top: -5%;
+}
 }
 /* end global rules */
 
@@ -222,7 +260,7 @@ header ul li a {
 
 @media (max-width:767px) {
   .landing-info {
-    height: 80vh;
+    height: 100vh;
   }
   .landing-info .container {
     width: 80%;
@@ -278,4 +316,209 @@ header ul li a {
   font-size: 18px;
   line-height: 30px;
   color: #777;
+}
+/* End of landing page */
+
+/* start of services section */
+.services {
+  width: 100%;
+  height: 65vh;
+}
+.services .container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0 auto;
+  width: var(--container-width);
+  height: inherit;
+}
+/* media for services-container */
+@media (max-width: 767px) {
+  .services .container {
+    width: 80%;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .services .container {
+    width: 80%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .services .container {
+    width: 80%;
+  }
+}
+@media (min-width: 1201px) {
+  .services .container {
+    width: var(--container-width);
+  }
+}
+/* end of media for services-container */
+
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  width: 70%;
+  height: 40vh;
+  top: 0%;
+}
+/* media quieres for icon-container*/
+@media (max-width: 767px) {
+  .icon-container{
+    width: 100%;
+    top: -10%;
+  }
+  .services .box {
+  width: calc(600px);
+  height: 50%;
+  margin-top: 5px;
+  }
+  .services .box:nth-child(2) {
+    order: 2;
+  }
+  .services .box:nth-child(4) {
+    order: 3;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .icon-container {
+    width: 100%;
+  }
+  .services .box {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(600px / 2 - 20px);
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .icon-container {
+    width: 100%;
+  }
+  .services .box {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(600px / 2 + 60px);
+  }
+}
+@media (min-width: 1201px) {
+  .icon-container {
+    width: 75%;
+  }
+  .services .box {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(600px / 2 - 50px);
+  }
+}
+@media (min-width: 1700px) {
+  .services .box {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(600px / 2 - 10px);
+  }
+}
+/* end media quiers for ico-container */
+.services i {
+  width: 50px;
+  font-size: 30px;
+  color: var(--main-color);
+}
+
+/* media quieres icon */
+@media (max-width: 767px) {
+  .services i {
+    width: 100%;
+    text-align: center;
+  }
+  .icon-title {
+    width: 100%;
+    text-align: center
+  }
+  .icon-descripe {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 5%;
+  }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+  .services i {
+    position: relative;
+    width: 0%;
+    text-align: left;
+    right: 20%;
+  }
+  .icon-title {
+    width: 75%;
+    text-align: left;
+  }
+  .icon-descripe {
+    position: relative;
+    text-align: left;
+    width: 80%;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .services i {
+    position: relative;
+    width: 0%;
+    text-align: left;
+    right: 15%;
+  }
+  .icon-descripe {
+    position: relative;
+    text-align: left;
+    width: 100%;
+  }
+}
+@media (min-width: 1201px) {
+  .services i {
+    position: relative;
+    width: 0%;
+    text-align: left;
+    right: 20%;
+  }
+}
+/* end media quierses icon */
+
+.icon-title {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  height: fit-content;
+}
+.icon-descripe {
+  position: relative;
+  left: 0%;
+  bottom: 15%;
+  color: var(--text-color);
+  font-weight: 300;
+}
+section .img {
+  position: relative;
+  top: -10%;
+  left: 250px;
+  width: 100px;
+  height: 65%;
+  background-color: var(--secondry-color);
+}
+@media (max-width: 1200px) {
+  section .img {
+    display: none;
+  }
+}
+section .img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10%;
+  width: 300px;
+  height: 80%;
+  background-image: url("../images/services-template-1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
