@@ -793,7 +793,7 @@ section .img::before {
 /* media quiers */
 @media (max-width: 767px) {
   .about {
-    height: 120vh;
+    height: 127vh;
   }
   .about .container {
     display: inline-block;
@@ -801,7 +801,7 @@ section .img::before {
     height: 90vh;
   }
   .title-descripe {
-    top: 1.5%;
+    top: 0.5%;
   }
   .img-section {
     position: relative;
@@ -895,3 +895,94 @@ section .img::before {
 }
 
 /* end of media quiers */
+
+/* end about section */
+
+/* start footer */
+.footer {
+  background-color: var(--third-color) ;
+  height: 50vh;
+}
+.footer .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+  height: 50vh;
+}
+.footer .main-text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  height: 13vh;
+}
+.footer .text-first-line,
+.footer .text-second-line, 
+.footer .text-third-line {
+  width: 100%;
+}
+.footer .text-first-line,
+.footer .text-second-line {
+  font-weight: 800;
+  font-size: 25px;
+}
+.footer .text-first-line {
+  word-spacing: -1px;
+  letter-spacing: -1px;
+  color: var(--secondry-color);
+  margin: 0;
+}
+.footer .text-second-line {
+  color: var(--main-color);
+  text-decoration: none;
+}
+.footer .text-third-line {
+  color: var(--secondry-color);
+  margin: 0;
+  word-spacing: 1px;
+} 
+.footer .credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: var(--secondry-color);
+}
+.footer .leon {
+  color: var(--main-color);
+  word-spacing: 3px;
+  width: 45px;
+  text-align: center;
+  font-weight: 700;
+}
+.footer .credit:first-child {
+  color: var(--main-color);
+}
+/* start media */
+@media (max-width: 767px) {
+  .footer .title-descripe {
+    top: -10.5%;
+  }
+}
+@media (min-width: 768px)  {
+  .footer .title-descripe {
+    top: -10%;
+  }
+  .footer .text-first-line,
+  .footer .text-second-line {
+    font-size: 35px;
+  }
+  .footer .credit {
+    font-size: 20px;
+  }
+  .footer .leon {
+    width: 60px;
+  }
+}
