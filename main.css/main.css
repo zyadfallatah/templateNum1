@@ -203,16 +203,15 @@ header ul li a {
 /* end of header */
 
 /* start of landing page */
+/* start landing img */
 .landing {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: calc(100vh - 60px);
   background-image: url("../images/landing-template-1.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
 }
@@ -235,7 +234,7 @@ header ul li a {
   font-weight: 400;
   line-height: 35px;
 }
-
+/* end landing img */
 .landing-info {
   position: relative;
   width: 100%;
